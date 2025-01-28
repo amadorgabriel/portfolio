@@ -10,7 +10,9 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        display: ["Lato", 'sans-serif'],
       },
     },
   },
