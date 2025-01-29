@@ -1,4 +1,4 @@
-import type, { Metadata } from "next";
+import { Metadata } from "next";
 import { Download } from "lucide-react";
 
 import { Inter } from "next/font/google";
