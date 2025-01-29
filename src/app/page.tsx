@@ -2,23 +2,23 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="max-w-[900px] w-full grid gap-8 grid-cols-1 lg:grid-cols-4 mt-40 mx-6 ">
-      <div className="col-span-1">
+    <div className="max-w-[900px] w-full grid gap-8 grid-cols-1 lg:grid-cols-9 mt-40 mx-6 ">
+      <div className="lg:col-span-3">
         <div className="sticky top-16 flex flex-col text-center items-center space-y-2">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXmzymUiTAl3wkxxak91-U6ifnnBj5kbDebJFwqHCRFzYveVYMoZ3OfHu8QKVhpE6-Yl4&usqp=CAU"
+            src="/profile.jpg"
             alt="Imagem de perfil"
-            className="w-32 rounded-full aspect-square object-cover"
+            className="w-38 rounded-full aspect-square object-cover"
           />
 
           <div className="space-y-2">
-            <h1 className="text-2xl">Etiqueta Certa</h1>
+            <h1 className="text-2xl">Gabriel Rodrigues Amador</h1>
 
-            <h3 className="text-blue-500 text-sm font-semibold">
-              Empresa de conformidade têxtil
+            <h3 className="text-blue-500 text-xs font-semibold uppercase">
+              Desenvolvedor frontend
             </h3>
 
-            <div className="flex flex-col justify-center items-center lg:items-start space-y-2 mt-4">
+            <div className="flex flex-col justify-center items-center lg:items-start space-y-2 mt-6">
               <a
                 href="https://github.com/amadorgabriel"
                 target="_blank"
@@ -51,87 +51,109 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="col-span-3 h-min bg-white rounded-2xl p-8 space-y-8">
+      <div className="lg:col-span-6 h-min bg-white rounded-2xl p-8 space-y-8">
         <div>
           <h2 className="pb-3 font-bold text-blue-500 hover:text-blue-700">
             Sobre
           </h2>
           <p>
-            Plataforma para criação de etiquetas em conformidade com o INMETRO,
-            ABNT e padrões internacionais.
+            Desenvolvedor Frontend com experiência em{" "}
+            <span className="font-semibold text-slate-800">
+              React, Typescript e Next.js
+            </span>
+            . Atuação em desenvolvimento de aplicações escaláveis, otimização de
+            performance e boas práticas de código.{" "}
+            <span className="font-semibold text-slate-800">
+              Interesse em infraestrutura, testes automatizados e arquitetura de
+              software
+            </span>
+            . Busco aprimorar minhas habilidades para atuar como{" "}
+            <span className="font-semibold text-slate-800">
+              desenvolvedor pleno
+            </span>
+            , focando em{" "}
+            <span className="font-semibold text-slate-800">
+              colaboração, autonomia e entrega de valor
+            </span>
+            .
           </p>
         </div>
         <div>
           <h2 className="mb-3 font-bold text-blue-500 hover:text-blue-700">
-            Eventos
+            Onde trabalhei?
           </h2>
 
           <div className="mb-8">
             <h3 className="pb-2  text-[1.12rem] text-slate-900">
-              Fórum da qualidade têxtil do Brasil{" "}
+              Desenvolvedor Júnior V na{" "}
               <a
-                href="#"
+                href="https://www.linkedin.com/company/etiqueta-certa/"
                 target="_blank"
-                className="hover:underline hover:text-blue-500"
+                className="hover:underline hover:text-blue-500 italic"
               >
-                @Blumenal
+                @Etiqueta Certa
               </a>
             </h3>
-            <p className="text-md/relaxed">
-              A Etiqueta Certa é uma das idealizadoras do Fórum da Qualidade
-              Têxtil do Brasil. O Fórum da Qualidade Têxtil é um evento que
-              acontece anualmente com o objetivo de reunir profissionais do
-              varejo e da indústria da moda para discutir boas práticas e gestão
-              da qualidade. É um grande espaço para networking, com palestras
-              diversas e convidados nacionais e internacionais especialistas nos
-              assuntos. A próxima edição será em 2025 em Blumenau, Santa
-              Catarina. Faça sua inscrição na lista de espera e seja avisado
-              quando as inscrições forem abertas.
-            </p>
+            <ul className="text-md/relaxed space-y-1 list-disc list-inside text-slate-800">
+              <li>
+                Desenvolvimento do principal produto da empresa utilizando
+                ReactJs, Typescript, Styled Components, NodeJs, PrismaORM, MySQL
+                e Docker.
+              </li>
+              <li>
+                Planejamento e implementação de regras de negócio e processos
+                internos.
+              </li>
+              <li>
+                Organização do time de TI, alinhando demandas técnicas e
+                operacionais.
+              </li>
+            </ul>
           </div>
 
           <div className="mb-8">
             <h3 className="pb-2 text-[1.12rem] text-slate-900">
-              Febratex{" "}
+              Técnico em Programação Frontend no{" "}
               <a
-                href="#"
+                href="https://www.linkedin.com/showcase/istic/"
                 target="_blank"
-                className="hover:underline hover:text-blue-500"
+                title="Instituto SENAI de Tecnologia da Informação e Comunicação"
+                className="hover:underline hover:text-blue-500 italic"
               >
-                @BC
+                @ISTIC
               </a>
             </h3>
-            <p className="text-md/relaxed">
-              A cada dois anos, a Etiqueta Certa marca presença na maior feira
-              da indústria têxtil da América Latina, a Febratex. A Febratex
-              acontece bianualmente, na capital têxtil do país, em Blumenau,
-              Santa Catarina, e reúne centenas de expositores dos segmentos mais
-              variados. É o maior evento têxtil da América Latina e a Etiqueta
-              Certa tem sempre o prazer de estar lá, revendo parceiros,
-              reencontrando clientes e selando futuros negócios.
-            </p>
+            <ul className="text-md/relaxed space-y-1 list-disc list-inside text-slate-800">
+              <li>Desenvolvimento de sistemas para a indústria automotiva.</li>
+              <li>
+                Estruturação de projetos do zero, participando de reuniões com
+                clientes e definição de requisitos.
+              </li>
+              <li>
+                Trabalho com React, Typescript e metodologias ágeis
+                (Scrum/Kanban).
+              </li>
+            </ul>
           </div>
 
           <div>
             <h3 className="pb-2 text-[1.12rem] text-slate-900">
-              Febratex{" "}
+              Desenvolvedor Júnior na{" "}
               <a
-                href="#"
+                href="https://www.linkedin.com/company/intelitrader"
                 target="_blank"
-                className="hover:underline hover:text-blue-500"
+                className="hover:underline hover:text-blue-500 italic"
               >
-                @BC
+                @Intelitrader
               </a>
             </h3>
-            <p className="text-md/relaxed">
-              A cada dois anos, a Etiqueta Certa marca presença na maior feira
-              da indústria têxtil da América Latina, a Febratex. A Febratex
-              acontece bianualmente, na capital têxtil do país, em Blumenau,
-              Santa Catarina, e reúne centenas de expositores dos segmentos mais
-              variados. É o maior evento têxtil da América Latina e a Etiqueta
-              Certa tem sempre o prazer de estar lá, revendo parceiros,
-              reencontrando clientes e selando futuros negócios.
-            </p>
+            <ul className="text-md/relaxed space-y-1 list-disc list-inside text-slate-800">
+              <li>
+                Desenvolvimento de um sistema de simulação de risco pré e pós
+                trade.
+              </li>
+              <li>Implementação de funcionalidades em ReactJs e Typescript.</li>
+            </ul>
           </div>
         </div>
       </div>
