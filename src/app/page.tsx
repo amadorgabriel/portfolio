@@ -1,20 +1,41 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="max-w-[900px] w-full grid gap-8 grid-cols-1 lg:grid-cols-9 mt-40 mx-6 ">
       <div className="lg:col-span-3">
         <div className="sticky top-16 flex flex-col text-center items-center space-y-2">
-          <img
-            src="/profile.jpg"
-            alt="Imagem de perfil"
-            className="w-38 rounded-full aspect-square object-cover"
-          />
+          <div className="group w-38 h-38 [perspective:1000px]">
+            <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              {/* <!-- Front Side --> */}
+              <div className="absolute w-full h-full[backface-visibility:hidden]">
+                <Image
+                  width={152}
+                  height={152}
+                  src="/profile.jpg"
+                  alt="Foto de perfil"
+                  className="rounded-full aspect-square object-cover"
+                />
+              </div>
+
+              {/* <!-- Back Side --> */}
+              <div className="absolute w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                <Image
+                  width={152}
+                  height={152}
+                  src="/notion-face.png"
+                  alt="Avatar de perfil"
+                  className="rounded-full aspect-square object-cover"
+                />
+              </div>
+            </div>
+          </div>
 
           <div className="space-y-2">
             <h1 className="text-2xl">Gabriel Rodrigues Amador</h1>
 
-            <h3 className="text-blue-500 text-xs font-semibold uppercase">
+            <h3 className="text-yellow-500 text-xs font-semibold uppercase">
               Desenvolvedor frontend
             </h3>
 
@@ -53,7 +74,7 @@ export default function Home() {
 
       <div className="lg:col-span-6 h-min bg-white rounded-2xl p-8 space-y-8">
         <div>
-          <h2 className="pb-3 font-bold text-blue-500 hover:text-blue-700">
+          <h2 className="pb-3 font-bold text-yellow-500 hover:text-yellow-700">
             Sobre
           </h2>
           <p>
@@ -79,7 +100,7 @@ export default function Home() {
           </p>
         </div>
         <div>
-          <h2 className="mb-3 font-bold text-blue-500 hover:text-blue-700">
+          <h2 className="mb-3 font-bold text-yellow-500 hover:text-yellow-700">
             Onde trabalhei?
           </h2>
 
@@ -89,7 +110,7 @@ export default function Home() {
               <a
                 href="https://www.linkedin.com/company/etiqueta-certa/"
                 target="_blank"
-                className="hover:underline hover:text-blue-500 italic"
+                className="hover:underline hover:text-yellow-500 italic"
               >
                 @Etiqueta Certa
               </a>
@@ -118,7 +139,7 @@ export default function Home() {
                 href="https://www.linkedin.com/showcase/istic/"
                 target="_blank"
                 title="Instituto SENAI de Tecnologia da Informação e Comunicação"
-                className="hover:underline hover:text-blue-500 italic"
+                className="hover:underline hover:text-yellow-500 italic"
               >
                 @ISTIC
               </a>
@@ -142,7 +163,7 @@ export default function Home() {
               <a
                 href="https://www.linkedin.com/company/intelitrader"
                 target="_blank"
-                className="hover:underline hover:text-blue-500 italic"
+                className="hover:underline hover:text-yellow-500 italic"
               >
                 @Intelitrader
               </a>

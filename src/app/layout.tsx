@@ -23,15 +23,15 @@ export default function RootLayout({
   return (
     <html lang="ptBR">
       <body
-        className={`${inter.variable} relative antialiased w-screen border-t-3 border-t-blue-500 overflow-x-hidden`}
+        className={`${inter.variable} relative antialiased w-screen border-t-3 border-t-yellow-500 overflow-x-hidden`}
       >
         <a
           href="/resume.pdf"
           target="_blank"
-          className="absolute flex items-center top-6 right-10 md:right-28  font-semibold py-1 px-4 rounded-[4px] text-blue-500 hover:bg-slate-200"
+          className="absolute flex items-center top-6 right-10 md:right-28  font-semibold py-1 px-4 rounded-[4px] text-yellow-500 hover:bg-slate-200"
         >
           <Download size={18} className="mr-2" />
-          Download as PDF
+          Baixar como  PDF
         </a>
 
         <main className="w-full flex justify-center mb-8">{children}</main>
