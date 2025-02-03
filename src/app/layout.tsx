@@ -28,7 +28,7 @@ export default function RootLayout({
         <a
           href="/resume.pdf"
           target="_blank"
-          className="absolute flex items-center top-6 right-10 md:right-28  font-semibold py-1 px-4 rounded-[4px] text-yellow-500 hover:bg-slate-200"
+          className="absolute flex items-center top-6 right-10 md:right-28  font-semibold py-1 px-4 rounded-[4px] text-yellow-500 hover:bg-yellow-50"
         >
           <Download size={18} className="mr-2" />
           Baixar como  PDF
