@@ -106,7 +106,7 @@ export default function Home() {
 
           <div className="mb-8">
             <h3 className="pb-2  text-[1.12rem] text-slate-900">
-              Desenvolvedor Júnior V na{" "}
+              Desenvolvedor Frontend na{" "}
               <a
                 href="https://www.linkedin.com/company/etiqueta-certa/"
                 target="_blank"
@@ -134,7 +134,7 @@ export default function Home() {
 
           <div className="mb-8">
             <h3 className="pb-2 text-[1.12rem] text-slate-900">
-              Técnico em Programação Frontend no{" "}
+              Desenvolvedor Frontend no{" "}
               <a
                 href="https://www.linkedin.com/showcase/istic/"
                 target="_blank"
@@ -159,7 +159,7 @@ export default function Home() {
 
           <div>
             <h3 className="pb-2 text-[1.12rem] text-slate-900">
-              Desenvolvedor Júnior na{" "}
+              Desenvolvedor Frontend na{" "}
               <a
                 href="https://www.linkedin.com/company/intelitrader"
                 target="_blank"
