@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, BookOpen } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -8,24 +8,22 @@ export default function Home() {
         <div className="sticky top-16 flex flex-col text-center items-center space-y-2">
           <div className="group w-38 h-38 [perspective:1000px]">
             <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              {/* <!-- Front Side --> */}
               <div className="absolute w-full h-full[backface-visibility:hidden]">
                 <Image
                   width={152}
                   height={152}
                   src="/profile.jpg"
-                  alt="Foto de perfil"
+                  alt="Foto de perfil de Gabriel Rodrigues Amador"
                   className="rounded-full aspect-square object-cover"
                 />
               </div>
 
-              {/* <!-- Back Side --> */}
               <div className="absolute w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)]">
                 <Image
                   width={152}
                   height={152}
                   src="/notion-face.png"
-                  alt="Avatar de perfil"
+                  alt="Avatar de perfil de Gabriel Rodrigues Amador"
                   className="rounded-full aspect-square object-cover"
                 />
               </div>
@@ -35,16 +33,19 @@ export default function Home() {
           <div className="space-y-2">
             <h1 className="text-2xl">Gabriel Rodrigues Amador</h1>
 
-            <h3 className="text-yellow-500 text-xs font-semibold uppercase">
+            <h2 className="text-yellow-500 text-xs font-semibold uppercase">
               Desenvolvedor frontend
-            </h3>
+            </h2>
+
+            <p className="text-xs text-slate-500">São Paulo, Brasil</p>
 
             <div className="flex flex-col justify-center items-center lg:items-start space-y-2 mt-6">
               <a
                 href="https://github.com/amadorgabriel"
                 target="_blank"
-                title="Github"
+                title="Github - Gabriel Amador"
                 className="w-fit  flex space-x-2 items-center px-2 cursor-pointer rounded-[4px] text-slate-600 hover:text-slate-900 hover:bg-gray-200"
+                rel="noopener noreferrer"
               >
                 <Github size={18} />
                 <p>Github</p>
@@ -52,17 +53,29 @@ export default function Home() {
               <a
                 href="https://www.linkedin.com/in/gabriel-rodrigues-amador/"
                 target="_blank"
-                title="LinkedIn"
+                title="LinkedIn - Gabriel Rodrigues Amador"
                 className="w-fit flex space-x-2 items-center px-2 cursor-pointer rounded-[4px] text-slate-600 hover:text-slate-900 hover:bg-gray-200"
+                rel="noopener noreferrer"
               >
                 <Linkedin size={18} />
                 <p>LinkedIn</p>
               </a>
               <a
+                href="https://www.goodreads.com/user/show/131404275-gabriel-amador"
+                target="_blank"
+                title="Goodreads - Minhas Leituras"
+                className="w-fit flex space-x-2 items-center px-2 cursor-pointer rounded-[4px] text-slate-600 hover:text-slate-900 hover:bg-gray-200"
+                rel="noopener noreferrer"
+              >
+                <BookOpen size={18} />
+                <p>Leituras</p>
+              </a>
+              <a
                 href="mailto:gabrielramador2014@gmail.com"
                 target="_blank"
-                title="Email"
+                title="Email - gabrielramador2014@gmail.com"
                 className="w-fit flex space-x-2 items-center px-2 cursor-pointer rounded-[4px] text-slate-600 hover:text-slate-900 hover:bg-gray-200"
+                rel="noreferrer"
               >
                 <Mail size={18} />
                 <p>Email</p>
@@ -72,102 +85,113 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="lg:col-span-6 h-min bg-white rounded-2xl p-8 space-y-8">
-        <div>
-          <h2 className="pb-3 font-bold text-yellow-500 hover:text-yellow-700">
-            Sobre
-          </h2>
-          <p>
-            Desenvolvedor Frontend com experiência em{" "}
-            <span className="font-semibold text-slate-800">
-              React, Typescript e Next.js
-            </span>
-            . Atuação em desenvolvimento de aplicações escaláveis, otimização de
-            performance e boas práticas de código.{" "}
-            <span className="font-semibold text-slate-800">
-              Interesse em infraestrutura, testes automatizados e arquitetura de
-              software
-            </span>
-            . Busco aprimorar minhas habilidades para atuar como{" "}
-            <span className="font-semibold text-slate-800">
-              desenvolvedor pleno
-            </span>
-            , focando em{" "}
-            <span className="font-semibold text-slate-800">
-              colaboração, autonomia e entrega de valor
-            </span>
-            .
+      <div className="lg:col-span-6 h-min space-y-4">
+        <section className="bg-white rounded-lg p-8">
+          <h2 className="pb-3 font-bold text-yellow-500">Sobre</h2>
+          <p className="pb-2">
+            Desenvolvedor frontend com{" "}
+            <b className="text-gray-800 font-semibold">
+              +4 anos de experiência sólida
+            </b>{" "}
+            em ReactJS, TypeScript e arquitetura de software, focado na criação
+            de soluções escaláveis e otimizadas.
           </p>
-        </div>
-        <div>
-          <h2 className="mb-3 font-bold text-yellow-500 hover:text-yellow-700">
-            Onde trabalhei?
-          </h2>
+          <p>
+            Carrego comigo muito entusiasmo. No momento atual tenho procurado
+            expandir meus horizontes com novos desafios, estudos e causas para
+            colaborar. Acredito que meu caminho profissional se sustenta em
+            extrair o melhor das experiências, contruir relacionamentos e
+            aprender.
+          </p>
+        </section>
 
-          <div className="mb-8">
-            <h3 className="pb-2  text-[1.12rem] text-slate-900">
+        <section className="bg-white rounded-lg p-8">
+          <h2 className="mb-3 font-bold text-yellow-500">Experiências</h2>
+
+          <article className="mb-8">
+            <h3 className="pb-2 text-[1.12rem] text-slate-900">
               Desenvolvedor Frontend na{" "}
               <a
                 href="https://www.linkedin.com/company/etiqueta-certa/"
                 target="_blank"
-                className="hover:underline hover:text-yellow-500 italic"
+                className="hover:underline text-yellow-500 hover:text-yellow-700 italic"
+                rel="noopener noreferrer"
               >
                 @Etiqueta Certa
               </a>
             </h3>
+            <p className="text-sm text-slate-500 mb-2">
+              JUN 2023 - PRESENTE (2 anos e 2 meses)
+            </p>
             <ul className="text-md/relaxed space-y-1 list-disc list-inside text-slate-800">
               <li>
-                Desenvolvimento do principal produto da empresa utilizando
-                ReactJs, Typescript, Styled Components, NodeJs, PrismaORM, MySQL
-                e Docker.
+                Desenvolvedor da nova versão do principal produto SaaS da
+                empresa, desde a concepção de regras de negócio até a
+                implementação final.
               </li>
               <li>
-                Planejamento e implementação de regras de negócio e processos
-                internos.
+                Liderança no desenvolvimento de soluções frontend robustas
+                utilizando React.js, TypeScript e RadixUi, garantindo
+                escalabilidade e manutenibilidade do código.
               </li>
               <li>
-                Organização do time de TI, alinhando demandas técnicas e
-                operacionais.
+                Colaboração com equipes de Backend (C#, MySQL) para integração
+                de APIs e otimização de fluxos de dados.
+              </li>
+              <li>
+                Atuação na migração da estrutura de infra para AWS (Amplify,
+                Route53, Bucket, RDS, EC2).
               </li>
             </ul>
-          </div>
+          </article>
 
-          <div className="mb-8">
+          <article className="mb-8">
             <h3 className="pb-2 text-[1.12rem] text-slate-900">
               Desenvolvedor Frontend no{" "}
               <a
                 href="https://www.linkedin.com/showcase/istic/"
                 target="_blank"
                 title="Instituto SENAI de Tecnologia da Informação e Comunicação"
-                className="hover:underline hover:text-yellow-500 italic"
+                className="hover:underline text-yellow-500 hover:text-yellow-700  italic"
+                rel="noopener noreferrer"
               >
                 @ISTIC
               </a>
             </h3>
+            <p className="text-sm text-slate-500 mb-2">
+              NOV 2021 - MAI 2023 (1 ano e 7 meses)
+            </p>
             <ul className="text-md/relaxed space-y-1 list-disc list-inside text-slate-800">
-              <li>Desenvolvimento de sistemas para a indústria automotiva.</li>
               <li>
-                Estruturação de projetos do zero, participando de reuniões com
-                clientes e definição de requisitos.
+                Definição e estruturação da arquitetura Frontend, incluindo a
+                seleção de bibliotecas (React.js, TypeScript, React Query).
               </li>
               <li>
-                Trabalho com React, Typescript e metodologias ágeis
-                (Scrum/Kanban).
+                Gestão de stakeholders: Atuação como ponto focal para clientes e
+                fornecedores, conduzindo reuniões e garantindo alinhamento.
+              </li>
+              <li>
+                Responsável pela gestão de cronogramas e estimativas de esforço,
+                contribuindo para a entrega de projetos dentro do prazo.
               </li>
             </ul>
-          </div>
+          </article>
 
-          <div>
+          <article>
             <h3 className="pb-2 text-[1.12rem] text-slate-900">
               Desenvolvedor Frontend na{" "}
               <a
                 href="https://www.linkedin.com/company/intelitrader"
                 target="_blank"
-                className="hover:underline hover:text-yellow-500 italic"
+                className="hover:underline text-yellow-500 hover:text-yellow-700  italic"
+                rel="noopener noreferrer"
               >
                 @Intelitrader
               </a>
             </h3>
+            <p className="text-sm text-slate-500 mb-2">
+              SET 2021 - OUT 2021 (2 meses)
+            </p>
             <ul className="text-md/relaxed space-y-1 list-disc list-inside text-slate-800">
               <li>
                 Desenvolvimento de um sistema de simulação de risco pré e pós
@@ -175,8 +199,63 @@ export default function Home() {
               </li>
               <li>Implementação de funcionalidades em ReactJs e Typescript.</li>
             </ul>
-          </div>
-        </div>
+          </article>
+        </section>
+
+        <section className="bg-white rounded-lg p-8">
+          <h2 className="pb-3 font-bold text-yellow-500">Formação Acadêmica</h2>
+
+          <article className="pb-4">
+            <h3 className="pb-2 text-[1.12rem] text-slate-900">
+              Superior em Análise e Desenvolvimento de Sistemas
+            </h3>
+            <p className="text-sm text-slate-500 mb-2">
+              Associação Educacional Nove de Julho -{" "}
+              <a
+                href="https://www.uninove.br/"
+                target="_blank"
+                className="hover:underline italic"
+                rel="noopener noreferrer"
+              >
+                @UNINOVE
+              </a>
+            </p>
+          </article>
+
+          <article className="pb-4">
+            <h3 className="pb-2 text-[1.12rem] text-slate-900">
+              Técnico em Multimídia - Comunicação em Meios Digitais
+            </h3>
+            <p className="text-sm text-slate-500 mb-2">
+              Escola de informática -{" "}
+              <a
+                href="https://www.sp.senai.br/"
+                target="_blank"
+                className="hover:underline italic"
+                rel="noopener noreferrer"
+              >
+                @SENAI
+              </a>
+            </p>
+          </article>
+
+          <article>
+            <h3 className="pb-2 text-[1.12rem] text-slate-900">
+              Técnico em Desenvolvimento de Sistemas
+            </h3>
+            <p className="text-sm text-slate-500 mb-2">
+              Escola de informática -{" "}
+              <a
+                href="https://www.sp.senai.br/"
+                target="_blank"
+                className="hover:underline italic"
+                rel="noopener noreferrer"
+              >
+                @SENAI
+              </a>
+            </p>
+          </article>
+        </section>
       </div>
     </div>
   );
