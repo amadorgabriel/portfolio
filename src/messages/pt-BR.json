@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "title": "Gabriel Rodrigues Amador - Desenvolvedor Frontend | React, TypeScript, Next.js",
+    "description": "Desenvolvedor Frontend especializado em React, TypeScript e Next.js. Experiência em desenvolvimento de aplicações escaláveis, otimização de performance e boas práticas de código.",
+    "openGraphTitle": "Gabriel Rodrigues Amador - Desenvolvedor Frontend",
+    "openGraphDescription": "Desenvolvedor Frontend especializado em React, TypeScript e Next.js. Experiência em desenvolvimento de aplicações escaláveis e performáticas."
+  },
+  "profile": {
+    "name": "Gabriel Rodrigues Amador",
+    "role": "Desenvolvedor frontend",
+    "location": "São Paulo, Brasil",
+    "photoAlt": "Foto de perfil de Gabriel Rodrigues Amador",
+    "avatarAlt": "Avatar de perfil de Gabriel Rodrigues Amador"
+  },
+  "social": {
+    "github": "Github",
+    "githubTitle": "Github - Gabriel Amador",
+    "linkedin": "LinkedIn",
+    "linkedinTitle": "LinkedIn - Gabriel Rodrigues Amador",
+    "reading": "Leituras",
+    "readingTitle": "Goodreads - Minhas Leituras",
+    "email": "Email",
+    "emailTitle": "Email - gabrielramador2014@gmail.com"
+  },
+  "actions": {
+    "downloadPDF": "Baixar como PDF"
+  },
+  "sections": {
+    "about": "Sobre",
+    "experience": "Experiências",
+    "education": "Formação Acadêmica"
+  },
+  "about": {
+    "paragraph1": "Desenvolvedor frontend com <bold>+4 anos de experiência sólida</bold> em ReactJS, TypeScript e arquitetura de software, focado na criação de soluções escaláveis e otimizadas.",
+    "paragraph2": "Carrego comigo muito entusiasmo. No momento atual tenho procurado expandir meus horizontes com novos desafios, estudos e causas para colaborar. Acredito que meu caminho profissional se sustenta em extrair o melhor das experiências, construir relacionamentos e aprender."
+  },
+  "experience": {
+    "current": "PRESENTE",
+    "at": "na",
+    "atInstitution": "no",
+    "etiquetaCerta": {
+      "role": "Desenvolvedor Frontend na",
+      "company": "@Etiqueta Certa",
+      "period": "JUN 2023 - PRESENTE ({duration})",
+      "achievements": [
+        "Desenvolvedor da nova versão do principal produto SaaS da empresa, desde a concepção de regras de negócio até a implementação final.",
+        "Liderança no desenvolvimento de soluções frontend robustas utilizando React.js, TypeScript e RadixUi, garantindo escalabilidade e manutenibilidade do código.",
+        "Colaboração com equipes de Backend (C#, MySQL) para integração de APIs e otimização de fluxos de dados.",
+        "Atuação na migração da estrutura de infra para AWS (Amplify, Route53, Bucket, RDS, EC2)."
+      ]
+    },
+    "istic": {
+      "role": "Desenvolvedor Frontend no",
+      "company": "@ISTIC",
+      "companyTitle": "Instituto SENAI de Tecnologia da Informação e Comunicação",
+      "period": "NOV 2021 - MAI 2023 ({duration})",
+      "achievements": [
+        "Definição e estruturação da arquitetura Frontend, incluindo a seleção de bibliotecas (React.js, TypeScript, React Query).",
+        "Gestão de stakeholders: Atuação como ponto focal para clientes e fornecedores, conduzindo reuniões e garantindo alinhamento.",
+        "Responsável pela gestão de cronogramas e estimativas de esforço, contribuindo para a entrega de projetos dentro do prazo."
+      ]
+    },
+    "intelitrader": {
+      "role": "Desenvolvedor Frontend na",
+      "company": "@Intelitrader",
+      "period": "SET 2021 - OUT 2021 ({duration})",
+      "achievements": [
+        "Desenvolvimento de um sistema de simulação de risco pré e pós trade.",
+        "Implementação de funcionalidades em ReactJs e Typescript."
+      ]
+    },
+    "durations": {
+      "yearsAndMonths": "{years} {years, plural, one {ano} other {anos}} e {months} {months, plural, one {mês} other {meses}}",
+      "months": "{months} {months, plural, one {mês} other {meses}}",
+      "years": "{years} {years, plural, one {ano} other {anos}}"
+    }
+  },
+  "education": {
+    "uninove": {
+      "degree": "Superior em Análise e Desenvolvimento de Sistemas",
+      "institution": "Associação Educacional Nove de Julho -",
+      "uninoveHandle": "@UNINOVE"
+    },
+    "senaiMultimedia": {
+      "degree": "Técnico em Multimídia - Comunicação em Meios Digitais",
+      "institution": "Escola de informática -",
+      "senaiHandle": "@SENAI"
+    },
+    "senaiDev": {
+      "degree": "Técnico em Desenvolvimento de Sistemas",
+      "institution": "Escola de informática -",
+      "senaiHandle": "@SENAI"
+    }
+  },
+  "jsonLd": {
+    "jobTitle": "Desenvolvedor Frontend",
+    "description": "Desenvolvedor Frontend especializado em React, TypeScript e Next.js",
+    "workLocation": "Brasil"
+  },
+  "notFound": {
+    "title": "Página Não Encontrada",
+    "description": "Desculpe, a página que você está procurando não existe ou foi movida.",
+    "backHome": "Voltar para Home"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "title": "Gabriel Rodrigues Amador - Frontend Developer | React, TypeScript, Next.js",
+    "description": "Frontend Developer specialized in React, TypeScript, and Next.js. Experience in developing scalable applications, performance optimization, and code best practices.",
+    "openGraphTitle": "Gabriel Rodrigues Amador - Frontend Developer",
+    "openGraphDescription": "Frontend Developer specialized in React, TypeScript, and Next.js. Experience in developing scalable and performant applications."
+  },
+  "profile": {
+    "name": "Gabriel Rodrigues Amador",
+    "role": "Frontend Developer",
+    "location": "São Paulo, Brazil",
+    "photoAlt": "Profile photo of Gabriel Rodrigues Amador",
+    "avatarAlt": "Profile avatar of Gabriel Rodrigues Amador"
+  },
+  "social": {
+    "github": "Github",
+    "githubTitle": "Github - Gabriel Amador",
+    "linkedin": "LinkedIn",
+    "linkedinTitle": "LinkedIn - Gabriel Rodrigues Amador",
+    "reading": "Reading",
+    "readingTitle": "Goodreads - My Reading List",
+    "email": "Email",
+    "emailTitle": "Email - gabrielramador2014@gmail.com"
+  },
+  "actions": {
+    "downloadPDF": "Download as PDF"
+  },
+  "sections": {
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education"
+  },
+  "about": {
+    "paragraph1": "Frontend developer with <bold>+4 years of solid experience</bold> in ReactJS, TypeScript, and software architecture, focused on creating scalable and optimized solutions.",
+    "paragraph2": "I carry a lot of enthusiasm with me. Currently, I have been seeking to expand my horizons with new challenges, studies, and causes to collaborate on. I believe my professional path is sustained by extracting the best from experiences, building relationships, and learning."
+  },
+  "experience": {
+    "current": "PRESENT",
+    "at": "at",
+    "atInstitution": "at",
+    "etiquetaCerta": {
+      "role": "Frontend Developer at",
+      "company": "@Etiqueta Certa",
+      "period": "JUN 2023 - PRESENT ({duration})",
+      "achievements": [
+        "Developed the new version of the company's main SaaS product, from business rule conception to final implementation.",
+        "Led the development of robust frontend solutions using React.js, TypeScript, and RadixUI, ensuring code scalability and maintainability.",
+        "Collaborated with Backend teams (C#, MySQL) for API integration and data flow optimization.",
+        "Participated in migrating the infrastructure to AWS (Amplify, Route53, Bucket, RDS, EC2)."
+      ]
+    },
+    "istic": {
+      "role": "Frontend Developer at",
+      "company": "@ISTIC",
+      "companyTitle": "SENAI Institute of Information and Communication Technology",
+      "period": "NOV 2021 - MAY 2023 ({duration})",
+      "achievements": [
+        "Defined and structured Frontend architecture, including library selection (React.js, TypeScript, React Query).",
+        "Stakeholder management: Served as the focal point for clients and suppliers, conducting meetings and ensuring alignment.",
+        "Responsible for schedule management and effort estimates, contributing to project delivery within deadlines."
+      ]
+    },
+    "intelitrader": {
+      "role": "Frontend Developer at",
+      "company": "@Intelitrader",
+      "period": "SEP 2021 - OCT 2021 ({duration})",
+      "achievements": [
+        "Developed a pre and post-trade risk simulation system.",
+        "Implemented features in ReactJs and Typescript."
+      ]
+    },
+    "durations": {
+      "yearsAndMonths": "{years} {years, plural, one {year} other {years}} and {months} {months, plural, one {month} other {months}}",
+      "months": "{months} {months, plural, one {month} other {months}}",
+      "years": "{years} {years, plural, one {year} other {years}}"
+    }
+  },
+  "education": {
+    "uninove": {
+      "degree": "Bachelor's in Systems Analysis and Development",
+      "institution": "Nove de Julho Educational Association -",
+      "uninoveHandle": "@UNINOVE"
+    },
+    "senaiMultimedia": {
+      "degree": "Multimedia Technician - Digital Media Communication",
+      "institution": "Information Technology School -",
+      "senaiHandle": "@SENAI"
+    },
+    "senaiDev": {
+      "degree": "Systems Development Technician",
+      "institution": "Information Technology School -",
+      "senaiHandle": "@SENAI"
+    }
+  },
+  "jsonLd": {
+    "jobTitle": "Frontend Developer",
+    "description": "Frontend Developer specialized in React, TypeScript, and Next.js",
+    "workLocation": "Brazil"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist or has been moved.",
+    "backHome": "Back to Home"
+  }
+}
