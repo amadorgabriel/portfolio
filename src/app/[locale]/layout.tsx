@@ -115,18 +115,21 @@ export default async function LocaleLayout({
       </head>
       <body
         className={`${inter.variable} relative antialiased w-screen border-t-3 border-t-yellow-500 overflow-x-hidden`}
+        suppressHydrationWarning
       >
         <div className="absolute top-6 right-10 md:right-28 flex items-center space-x-2 z-50">
           <LocaleSwitcher />
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            className="flex items-center font-semibold py-1 px-4 rounded-[4px] text-yellow-500 hover:bg-yellow-50"
-            rel="noreferrer"
-          >
-            <Download size={18} className="mr-2" />
-            {t("downloadPDF")}
-          </a>
+          {locale === "pt-BR" && (
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              className="flex items-center font-semibold py-1 px-4 rounded-[4px] text-yellow-500 hover:bg-yellow-50"
+              rel="noreferrer"
+            >
+              <Download size={18} className="mr-2" />
+              {t("downloadPDF")}
+            </a>
+          )}
         </div>
 
         <main className="w-full flex justify-center mb-8">{children}</main>

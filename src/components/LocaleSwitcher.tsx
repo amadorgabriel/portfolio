@@ -18,7 +18,7 @@ export default function LocaleSwitcher() {
     setMounted(true);
   }, []);
 
-  const currentLocale = (params?.locale as Locale) || "pt-BR";
+  const currentLocale = (params?.locale as Locale) || locales[0];
 
   const handleLocaleChange = (nextLocale: Locale) => {
     if (nextLocale === currentLocale) {
@@ -27,7 +27,10 @@ export default function LocaleSwitcher() {
     }
 
     startTransition(() => {
-      const newPathname = pathname.replace(`/${currentLocale}`, `/${nextLocale}`);
+      const newPathname = pathname.replace(
+        `/${currentLocale}`,
+        `/${nextLocale}`,
+      );
       router.push(newPathname);
     });
     setIsOpen(false);
@@ -35,10 +38,15 @@ export default function LocaleSwitcher() {
 
   if (!mounted) {
     return (
-      <div className="flex items-center space-x-1 px-2 py-1 rounded-[4px] text-slate-600">
+      <button
+        disabled
+        className="flex items-center space-x-1 px-2 py-1 rounded-[4px] text-slate-600 opacity-70"
+        aria-label="Change language"
+        aria-expanded="false"
+      >
         <Globe size={16} />
         <span className="text-sm font-medium">{labels[currentLocale]}</span>
-      </div>
+      </button>
     );
   }
 
@@ -47,7 +55,7 @@ export default function LocaleSwitcher() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         disabled={isPending}
-        className="flex items-center space-x-1 px-2 py-1 rounded-[4px] text-slate-600 hover:text-slate-900 hover:bg-gray-200 transition-colors"
+        className="flex items-center space-x-1 px-2 py-1 rounded-[4px] text-slate-600 hover:text-slate-900 hover:bg-gray-200 transition-colors cursor-pointer"
         aria-label="Change language"
         aria-expanded={isOpen}
       >
@@ -63,7 +71,7 @@ export default function LocaleSwitcher() {
             aria-hidden="true"
           />
 
-          <div 
+          <div
             className="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-200 py-1 z-50"
             role="menu"
           >
@@ -71,7 +79,7 @@ export default function LocaleSwitcher() {
               <button
                 key={locale}
                 onClick={() => handleLocaleChange(locale)}
-                className={`w-full flex items-center justify-between px-4 py-2 text-sm text-left hover:bg-gray-100 transition-colors ${
+                className={`w-full flex items-center justify-between px-4 py-2 text-sm text-left hover:bg-gray-100 transition-colors cursor-pointer ${
                   locale === currentLocale
                     ? "text-yellow-600 font-medium"
                     : "text-slate-700"
