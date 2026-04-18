@@ -1,0 +1,89 @@
+{
+  "sections": {
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education"
+  },
+  "about": {
+    "paragraph1": "Frontend developer with <bold>+4 years of solid experience</bold> in ReactJS, TypeScript, and software architecture, focused on creating scalable and optimized solutions.",
+    "paragraph2": "I carry a lot of enthusiasm with me. Currently, I have been seeking to expand my horizons with new challenges, studies, and causes to collaborate on. I believe my professional path is sustained by extracting the best from experiences, building relationships, and learning."
+  },
+  "experiences": [
+    {
+      "role": "Frontend Developer at",
+      "company": "Spott",
+      "companyLinkTitle": "",
+      "companyUrl": "https://www.linkedin.com/company/evspott/",
+      "startDate": "2026-01-01T00:00:00.000-03:00",
+      "endDate": null,
+      "achievements": [
+        "I work on a SaaS product for the e-mobility sector, building and evolving complex frontend features. I collaborate with an agile team using Scrum and OKRs to drive priorities and outcomes."
+      ]
+    },
+    {
+      "role": "Frontend Developer at",
+      "company": "Etiqueta Certa",
+      "companyLinkTitle": "",
+      "companyUrl": "https://www.linkedin.com/company/etiqueta-certa/",
+      "startDate": "2023-06-01T00:00:00.000-03:00",
+      "endDate": null,
+      "achievements": [
+        "Developed the new version of the company's main SaaS product, from business rule conception to final implementation.",
+        "Led the development of robust frontend solutions using React.js, TypeScript, and RadixUI, ensuring code scalability and maintainability.",
+        "Collaborated with Backend teams (C#, MySQL) for API integration and data flow optimization.",
+        "Participated in migrating the infrastructure to AWS (Amplify, Route53, Bucket, RDS, EC2)."
+      ]
+    },
+    {
+      "role": "Frontend Developer at",
+      "company": "ISTIC",
+      "companyLinkTitle": "SENAI Institute of Information and Communication Technology",
+      "companyUrl": "https://www.linkedin.com/showcase/istic/",
+      "startDate": "2021-11-01T00:00:00.000-03:00",
+      "endDate": "2023-05-31T00:00:00.000-03:00",
+      "achievements": [
+        "Defined and structured Frontend architecture, including library selection (React.js, TypeScript, React Query).",
+        "Stakeholder management: Served as the focal point for clients and suppliers, conducting meetings and ensuring alignment.",
+        "Responsible for schedule management and effort estimates, contributing to project delivery within deadlines."
+      ]
+    },
+    {
+      "role": "Frontend Developer at",
+      "company": "Intelitrader",
+      "companyLinkTitle": "",
+      "companyUrl": "https://www.linkedin.com/company/intelitrader",
+      "startDate": "2021-09-01T00:00:00.000-03:00",
+      "endDate": "2021-10-31T00:00:00.000-03:00",
+      "achievements": [
+        "Developed a pre and post-trade risk simulation system.",
+        "Implemented features in ReactJs and Typescript."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor's in Systems Analysis and Development",
+      "institution": "Nove de Julho Educational Association -",
+      "link": {
+        "href": "https://www.uninove.br/",
+        "label": "@UNINOVE"
+      }
+    },
+    {
+      "degree": "Multimedia Technician - Digital Media Communication",
+      "institution": "Information Technology School -",
+      "link": {
+        "href": "https://www.sp.senai.br/",
+        "label": "@SENAI"
+      }
+    },
+    {
+      "degree": "Systems Development Technician",
+      "institution": "Information Technology School -",
+      "link": {
+        "href": "https://www.sp.senai.br/",
+        "label": "@SENAI"
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "sections": {
+    "about": "Sobre",
+    "experience": "Experiências",
+    "education": "Formação Acadêmica"
+  },
+  "about": {
+    "paragraph1": "Desenvolvedor frontend com <bold>+4 anos de experiência sólida</bold> em ReactJS, TypeScript e arquitetura de software, focado na criação de soluções escaláveis e otimizadas.",
+    "paragraph2": "Carrego comigo muito entusiasmo. No momento atual tenho procurado expandir meus horizontes com novos desafios, estudos e causas para colaborar. Acredito que meu caminho profissional se sustenta em extrair o melhor das experiências, construir relacionamentos e aprender."
+  },
+  "experiences": [
+    {
+      "role": "Desenvolvedor Frontend na",
+      "company": "Spott",
+      "companyLinkTitle": "",
+      "companyUrl": "https://www.linkedin.com/company/evspott/",
+      "startDate": "2026-01-01T00:00:00.000-03:00",
+      "endDate": null,
+      "achievements": [
+        "Atuo no desenvolvimento de um produto SaaS para o setor de eletromobilidade, onde sou responsável por construir e evoluir features complexas no frontend. Trabalho com um time ágil utilizando Scrum e OKRs para guiar prioridades e resultados."
+      ]
+    },
+    {
+      "role": "Desenvolvedor Frontend na",
+      "company": "Etiqueta Certa",
+      "companyLinkTitle": "",
+      "companyUrl": "https://www.linkedin.com/company/etiqueta-certa/",
+      "startDate": "2023-06-01T00:00:00.000-03:00",
+      "endDate": null,
+      "achievements": [
+        "Desenvolvedor da nova versão do principal produto SaaS da empresa, desde a concepção de regras de negócio até a implementação final.",
+        "Liderança no desenvolvimento de soluções frontend robustas utilizando React.js, TypeScript e RadixUi, garantindo escalabilidade e manutenibilidade do código.",
+        "Colaboração com equipes de Backend (C#, MySQL) para integração de APIs e otimização de fluxos de dados.",
+        "Atuação na migração da estrutura de infra para AWS (Amplify, Route53, Bucket, RDS, EC2)."
+      ]
+    },
+    {
+      "role": "Desenvolvedor Frontend no",
+      "company": "ISTIC",
+      "companyLinkTitle": "Instituto SENAI de Tecnologia da Informação e Comunicação",
+      "companyUrl": "https://www.linkedin.com/showcase/istic/",
+      "startDate": "2021-11-01T00:00:00.000-03:00",
+      "endDate": "2023-05-31T00:00:00.000-03:00",
+      "achievements": [
+        "Definição e estruturação da arquitetura Frontend, incluindo a seleção de bibliotecas (React.js, TypeScript, React Query).",
+        "Gestão de stakeholders: Atuação como ponto focal para clientes e fornecedores, conduzindo reuniões e garantindo alinhamento.",
+        "Responsável pela gestão de cronogramas e estimativas de esforço, contribuindo para a entrega de projetos dentro do prazo."
+      ]
+    },
+    {
+      "role": "Desenvolvedor Frontend na",
+      "company": "Intelitrader",
+      "companyLinkTitle": "",
+      "companyUrl": "https://www.linkedin.com/company/intelitrader",
+      "startDate": "2021-09-01T00:00:00.000-03:00",
+      "endDate": "2021-10-31T00:00:00.000-03:00",
+      "achievements": [
+        "Desenvolvimento de um sistema de simulação de risco pré e pós trade.",
+        "Implementação de funcionalidades em ReactJs e Typescript."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Superior em Análise e Desenvolvimento de Sistemas",
+      "institution": "Associação Educacional Nove de Julho -",
+      "link": {
+        "href": "https://www.uninove.br/",
+        "label": "@UNINOVE"
+      }
+    },
+    {
+      "degree": "Técnico em Multimídia - Comunicação em Meios Digitais",
+      "institution": "Escola de informática -",
+      "link": {
+        "href": "https://www.sp.senai.br/",
+        "label": "@SENAI"
+      }
+    },
+    {
+      "degree": "Técnico em Desenvolvimento de Sistemas",
+      "institution": "Escola de informática -",
+      "link": {
+        "href": "https://www.sp.senai.br/",
+        "label": "@SENAI"
+      }
+    }
+  ]
+}

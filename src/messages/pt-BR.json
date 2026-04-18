@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "Gabriel Rodrigues Amador - Desenvolvedor Frontend | React, TypeScript, Next.js",
+    "description": "Desenvolvedor Frontend especializado em React, TypeScript e Next.js. Experiência em desenvolvimento de aplicações escaláveis, otimização de performance e boas práticas de código.",
+    "openGraphTitle": "Gabriel Rodrigues Amador - Desenvolvedor Frontend",
+    "openGraphDescription": "Desenvolvedor Frontend especializado em React, TypeScript e Next.js. Experiência em desenvolvimento de aplicações escaláveis e performáticas."
+  },
+  "profile": {
+    "name": "Gabriel Rodrigues Amador",
+    "role": "Desenvolvedor frontend",
+    "location": "São Paulo, Brasil",
+    "photoAlt": "Foto de perfil de Gabriel Rodrigues Amador",
+    "avatarAlt": "Avatar de perfil de Gabriel Rodrigues Amador"
+  },
+  "social": {
+    "github": "Github",
+    "githubTitle": "Github - Gabriel Amador",
+    "linkedin": "LinkedIn",
+    "linkedinTitle": "LinkedIn - Gabriel Rodrigues Amador",
+    "reading": "Leituras",
+    "readingTitle": "Goodreads - Minhas Leituras",
+    "email": "Email",
+    "emailTitle": "Email - gabrielramador2014@gmail.com"
+  },
+  "actions": {
+    "downloadPDF": "Baixar como PDF"
+  },
+  "experience": {
+    "current": "PRESENTE",
+    "durations": {
+      "yearsAndMonths": "{years} {years, plural, one {ano} other {anos}} e {months} {months, plural, one {mês} other {meses}}",
+      "months": "{months} {months, plural, one {mês} other {meses}}",
+      "years": "{years} {years, plural, one {ano} other {anos}}"
+    }
+  },
+  "jsonLd": {
+    "jobTitle": "Desenvolvedor Frontend",
+    "description": "Desenvolvedor Frontend especializado em React, TypeScript e Next.js",
+    "workLocation": "Brasil"
+  },
+  "notFound": {
+    "title": "Página Não Encontrada",
+    "description": "Desculpe, a página que você está procurando não existe ou foi movida.",
+    "backHome": "Voltar para Home"
+  }
+}
