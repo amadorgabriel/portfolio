@@ -10,23 +10,23 @@
   },
   "experiences": [
     {
-      "role": "Desenvolvedor Frontend na",
+      "role": "Engenheiro Frontend Pleno na",
       "company": "Spott",
       "companyLinkTitle": "",
       "companyUrl": "https://www.linkedin.com/company/evspott/",
-      "startDate": "2026-01-01T00:00:00.000-03:00",
+      "startDate": "2026-2-01T00:00:00.000-03:00",
       "endDate": null,
       "achievements": [
         "Atuo no desenvolvimento de um produto SaaS para o setor de eletromobilidade, onde sou responsável por construir e evoluir features complexas no frontend. Trabalho com um time ágil utilizando Scrum e OKRs para guiar prioridades e resultados."
       ]
     },
     {
-      "role": "Desenvolvedor Frontend na",
+      "role": "Engenheiro Frontend Pleno na",
       "company": "Etiqueta Certa",
       "companyLinkTitle": "",
       "companyUrl": "https://www.linkedin.com/company/etiqueta-certa/",
       "startDate": "2023-06-01T00:00:00.000-03:00",
-      "endDate": null,
+      "endDate": "2026-01-01T00:00:00.000-03:00",
       "achievements": [
         "Desenvolvedor da nova versão do principal produto SaaS da empresa, desde a concepção de regras de negócio até a implementação final.",
         "Liderança no desenvolvimento de soluções frontend robustas utilizando React.js, TypeScript e RadixUi, garantindo escalabilidade e manutenibilidade do código.",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "role": "Desenvolvedor Frontend no",
+      "role": "Engenheiro Frontend Júnior na",
       "company": "ISTIC",
       "companyLinkTitle": "Instituto SENAI de Tecnologia da Informação e Comunicação",
       "companyUrl": "https://www.linkedin.com/showcase/istic/",
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "role": "Desenvolvedor Frontend na",
+      "role": "Engenheiro Frontend Júnior na",
       "company": "Intelitrader",
       "companyLinkTitle": "",
       "companyUrl": "https://www.linkedin.com/company/intelitrader",

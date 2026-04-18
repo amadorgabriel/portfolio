@@ -10,18 +10,18 @@
   },
   "experiences": [
     {
-      "role": "Frontend Developer at",
+      "role": "Frontend Engineer at",
       "company": "Spott",
       "companyLinkTitle": "",
       "companyUrl": "https://www.linkedin.com/company/evspott/",
-      "startDate": "2026-01-01T00:00:00.000-03:00",
-      "endDate": null,
+      "startDate": "2026-2-01T00:00:00.000-03:00",
+      "endDate": "2026-01-01T00:00:00.000-03:00",
       "achievements": [
         "I work on a SaaS product for the e-mobility sector, building and evolving complex frontend features. I collaborate with an agile team using Scrum and OKRs to drive priorities and outcomes."
       ]
     },
     {
-      "role": "Frontend Developer at",
+      "role": "Frontend Engineer at",
       "company": "Etiqueta Certa",
       "companyLinkTitle": "",
       "companyUrl": "https://www.linkedin.com/company/etiqueta-certa/",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "role": "Frontend Developer at",
+      "role": "Junior Frontend Engineer at",
       "company": "ISTIC",
       "companyLinkTitle": "SENAI Institute of Information and Communication Technology",
       "companyUrl": "https://www.linkedin.com/showcase/istic/",
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "role": "Frontend Developer at",
+      "role": "Junior Frontend Developer at",
       "company": "Intelitrader",
       "companyLinkTitle": "",
       "companyUrl": "https://www.linkedin.com/company/intelitrader",
