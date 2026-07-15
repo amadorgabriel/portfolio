@@ -92,7 +92,7 @@ export function ProfileSidebar({ locale, profile, social }: ProfileSidebarProps)
               <p>{social.reading}</p>
             </a>
             <a
-              href="mailto:amadogabriel.dev@gmail.com"
+              href="mailto:amadorgabriel.dev@gmail.com"
               target="_blank"
               title={social.emailTitle}
               className={socialLinkClass}
