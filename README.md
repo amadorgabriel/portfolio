@@ -27,6 +27,12 @@ Pinned repos and the Projects tab call the GitHub API. Set a token to avoid low 
 
 Restart `npm run dev` after changing env vars.
 
+### SEO & AEO
+
+- Set `NEXT_PUBLIC_SITE_URL` in `.env.local` (see `.env.example`).
+- After deploy, verify `/sitemap.xml`, `/robots.txt`, and `/llms.txt`.
+- Details: [docs/AEO.md](docs/AEO.md).
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More

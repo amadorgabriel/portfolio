@@ -1,0 +1,40 @@
+# Gabriel Rodrigues Amador — extended context
+
+## Summary
+
+Gabriel Rodrigues Amador is a frontend and fullstack engineer based in São Paulo, Brazil. He builds scalable web applications with React, TypeScript, and Next.js, with experience across product companies and education institutions.
+
+## Work experience (high level)
+
+- Mid Frontend / Fullstack Engineer at Spott (2026)
+- Mid Frontend Engineer at Etiqueta (2023–2026)
+- Junior Frontend Engineer at SENAI (2021–2023)
+- Junior Frontend Engineer at Intelitrader (2021)
+
+## Education
+
+- Bachelor's in Systems Analysis and Development — UNINOVE
+- Multimedia Technician — SENAI
+- Systems Development Technician — SENAI
+
+## Technical focus
+
+React, TypeScript, Next.js, JavaScript, frontend architecture, web performance, UI engineering.
+
+## Open source & projects
+
+Public repositories are listed on GitHub (user: amadorgabriel). Projects tagged `portfolio` on GitHub are featured on the site Projects tab; pinned repositories appear on the Work tab.
+
+## Contact
+
+- Email: amadorgabriel.dev@gmail.com
+- Website: https://amadorgabriel.vercel.app/
+- GitHub: https://github.com/amadorgabriel
+- LinkedIn: https://www.linkedin.com/in/amadorgabrieldev/
+- X: https://x.com/_amadorgabriel_
+
+## Crawling notes
+
+- Main content is server-rendered at `/`.
+- Machine-readable structured data: JSON-LD (Person, WebSite, ProfilePage) on the homepage.
+- Sitemap: https://amadorgabriel.vercel.app/sitemap.xml

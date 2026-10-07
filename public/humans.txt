@@ -1,0 +1,9 @@
+/* TEAM */
+Developer: Gabriel Rodrigues Amador
+Site: https://amadorgabriel.vercel.app
+Location: São Paulo, Brazil
+Twitter: @_amadorgabriel_
+GitHub: amadorgabriel
+
+/* THANKS */
+Built with Next.js and React.

@@ -2,80 +2,87 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "@/styles/portfolio-motion.css";
-import { LINKEDIN_PROFILE_URL } from "@/lib/profile-links";
-import messages from "@/messages/en-US.json";
+import { SiteJsonLd } from "@/components/site-json-ld";
+import {
+  OG_IMAGE_PATH,
+  SITE_DESCRIPTION,
+  SITE_KEYWORDS,
+  SITE_NAME,
+  SITE_OG_DESCRIPTION,
+  SITE_TITLE,
+  SITE_URL,
+} from "@/lib/site";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const meta = messages.metadata;
-const jsonLd = messages.jsonLd;
-
 export const metadata: Metadata = {
-  title: meta.title,
-  description: meta.description,
-  keywords: [
-    "frontend developer",
-    "react",
-    "typescript",
-    "nextjs",
-    "javascript",
-    "web developer",
-    "gabriel amador",
-  ],
-  authors: [{ name: "Gabriel Rodrigues Amador" }],
-  creator: "Gabriel Rodrigues Amador",
-  publisher: "Gabriel Rodrigues Amador",
-  robots: "index, follow",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: SITE_TITLE,
+    template: `%s · ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  keywords: SITE_KEYWORDS,
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  category: "technology",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  alternates: {
+    canonical: "/",
+    types: {
+      "text/plain": [{ url: "/llms.txt", title: "LLMs.txt" }],
+    },
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://amadorgabriel.vercel.app",
-    title: meta.openGraphTitle,
-    description: meta.openGraphDescription,
-    siteName: "Gabriel Rodrigues Amador - Portfolio",
+    url: "/",
+    title: SITE_TITLE,
+    description: SITE_OG_DESCRIPTION,
+    siteName: SITE_NAME,
     images: [
       {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: meta.openGraphTitle,
+        url: OG_IMAGE_PATH,
+        width: 512,
+        height: 512,
+        alt: `${SITE_NAME} — profile photo`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: meta.openGraphTitle,
-    description: meta.description,
-    images: ["/og-image.png"],
+    site: "@_amadorgabriel_",
+    creator: "@_amadorgabriel_",
+    title: SITE_TITLE,
+    description: SITE_OG_DESCRIPTION,
+    images: [OG_IMAGE_PATH],
   },
-  alternates: {
-    canonical: "https://amadorgabriel.vercel.app",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
-  other: {
-    "json-ld": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Person",
-      name: "Gabriel Rodrigues Amador",
-      jobTitle: jsonLd.jobTitle,
-      description: jsonLd.description,
-      url: "https://amadorgabriel.vercel.app",
-      sameAs: ["https://github.com/amadorgabriel", LINKEDIN_PROFILE_URL],
-      knowsAbout: [
-        "React",
-        "TypeScript",
-        "Next.js",
-        "JavaScript",
-        "Node.js",
-        "Frontend Development",
-        "Web Development",
-      ],
-      alumniOf: jsonLd.jobTitle,
-      workLocation: jsonLd.workLocation,
-    }),
-  },
+  ...(process.env.GOOGLE_SITE_VERIFICATION
+    ? {
+        other: {
+          "google-site-verification": process.env.GOOGLE_SITE_VERIFICATION,
+        },
+      }
+    : {}),
 };
 
 export default function RootLayout({
@@ -86,14 +93,14 @@ export default function RootLayout({
   return (
     <html lang="en-US" className={inter.variable}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#ffffff" />
+        <link rel="author" href="/humans.txt" />
       </head>
       <body
         className={`${inter.variable} antialiased bg-white text-neutral-900`}
         suppressHydrationWarning
       >
+        <SiteJsonLd />
         {children}
       </body>
     </html>
