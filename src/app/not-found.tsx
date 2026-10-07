@@ -1,6 +1,5 @@
-import { redirect } from "next/navigation";
-import { defaultLocale } from "@/i18n/config";
+import { NotFoundPage } from "@/components/portfolio/NotFoundPage";
 
 export default function NotFound() {
-  redirect(`/${defaultLocale}`);
+  return <NotFoundPage />;
 }

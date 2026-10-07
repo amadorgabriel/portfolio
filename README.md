@@ -16,7 +16,16 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### GitHub API (recommended)
+
+Pinned repos and the Projects tab call the GitHub API. Set a token to avoid low unauthenticated rate limits:
+
+1. Copy `.env.example` to `.env.local`
+2. Create a token at [github.com/settings/tokens](https://github.com/settings/tokens) (public repo read access is enough)
+3. Set `GITHUB_TOKEN=` in `.env.local`
+4. On Vercel, add the same variable in **Project → Settings → Environment Variables**
+
+Restart `npm run dev` after changing env vars.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
