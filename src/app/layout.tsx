@@ -4,7 +4,9 @@ import "./globals.css";
 import "@/styles/portfolio-motion.css";
 import { SiteJsonLd } from "@/components/site-json-ld";
 import {
+  OG_IMAGE_HEIGHT,
   OG_IMAGE_PATH,
+  OG_IMAGE_WIDTH,
   SITE_DESCRIPTION,
   SITE_KEYWORDS,
   SITE_NAME,
@@ -58,9 +60,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: OG_IMAGE_PATH,
-        width: 512,
-        height: 512,
-        alt: `${SITE_NAME} — profile photo`,
+        width: OG_IMAGE_WIDTH,
+        height: OG_IMAGE_HEIGHT,
+        alt: `${SITE_NAME} — Frontend & Fullstack Engineer`,
       },
     ],
   },

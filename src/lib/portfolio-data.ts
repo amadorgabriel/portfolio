@@ -1,13 +1,10 @@
-import homeContent from "../../public/assets/content/home/en-US.json";
 import { LINKEDIN_PROFILE_URL } from "@/lib/profile-links";
-import messages from "@/messages/en-US.json";
 
 export const profile = {
-  name: messages.profile.name,
-  role: messages.profile.role,
-  location: messages.profile.location,
+  name: "Gabriel Rodrigues Amador",
+  role: "Frontend Developer",
+  location: "São Paulo, Brazil",
   email: "amadorgabriel.dev@gmail.com",
-  resume: "/resume.pdf",
   socials: [
     { label: "GitHub", href: "https://github.com/amadorgabriel" },
     { label: "LinkedIn", href: LINKEDIN_PROFILE_URL },
@@ -45,8 +42,18 @@ export const work: WorkItem[] = [
   },
 ];
 
-export const education = homeContent.education.map((item) => ({
-  degree: item.degree,
-  institution: `${item.institution.replace(/\s*-$/, "").trim()} ${item.link.label}`,
-}));
+export const education = [
+  {
+    degree: "Bachelor's in Systems Analysis and Development",
+    institution: "Nove de Julho Educational Association @UNINOVE",
+  },
+  {
+    degree: "Multimedia Technician - Digital Media Communication",
+    institution: "Information Technology School @SENAI",
+  },
+  {
+    degree: "Systems Development Technician",
+    institution: "Information Technology School @SENAI",
+  },
+];
 

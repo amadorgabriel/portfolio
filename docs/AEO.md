@@ -30,4 +30,4 @@ Optional: `GOOGLE_SITE_VERIFICATION` for Search Console.
 ## Content notes
 
 - Primary copy is **server-rendered** on `/` (GitHub About README, pinned repos, projects).
-- Add a dedicated **1200×630** `public/og-image.png` when available; until then OG uses `profile.png`.
+- Open Graph and Twitter cards use `public/og-image.png` (1200×630). The circular avatar on the page stays `public/profile.png`.
