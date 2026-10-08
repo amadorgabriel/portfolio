@@ -2,7 +2,8 @@ import { LINKEDIN_PROFILE_URL } from "@/lib/profile-links";
 
 export const profile = {
   name: "Gabriel Rodrigues Amador",
-  role: "Frontend Developer",
+  displayName: "Gabriel Rodrigues",
+  role: "Fullstack Engineer ReactJs .NET",
   location: "São Paulo, Brazil",
   email: "amadorgabriel.dev@gmail.com",
   socials: [

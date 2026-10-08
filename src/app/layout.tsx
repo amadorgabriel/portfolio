@@ -11,6 +11,7 @@ import {
   SITE_KEYWORDS,
   SITE_NAME,
   SITE_OG_DESCRIPTION,
+  SITE_TAB_NAME,
   SITE_TITLE,
   SITE_URL,
 } from "@/lib/site";
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: SITE_TITLE,
-    template: `%s · ${SITE_NAME}`,
+    template: `%s · ${SITE_TAB_NAME}`,
   },
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
@@ -62,7 +63,7 @@ export const metadata: Metadata = {
         url: OG_IMAGE_PATH,
         width: OG_IMAGE_WIDTH,
         height: OG_IMAGE_HEIGHT,
-        alt: `${SITE_NAME} — Frontend & Fullstack Engineer`,
+        alt: `${SITE_NAME} — Software Engineer`,
       },
     ],
   },

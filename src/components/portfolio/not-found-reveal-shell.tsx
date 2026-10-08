@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useState, type ReactNode } from "react";
+import type { ProfileHeader } from "@/lib/github/user-profile";
 import { NotionNotFoundIntro } from "./notion-not-found-intro";
 import { ProfileIdentity } from "./site-header";
 import { usePrefersReducedMotion } from "./use-typewriter";
@@ -10,7 +11,8 @@ const linkClass =
 
 export function NotFoundRevealShell({
   children,
-}: Readonly<{ children: ReactNode }>) {
+  profileHeader,
+}: Readonly<{ children: ReactNode; profileHeader: ProfileHeader }>) {
   const reduced = usePrefersReducedMotion();
   const [revealed, setRevealed] = useState(reduced);
   const handleReveal = useCallback(() => setRevealed(true), []);
@@ -19,7 +21,7 @@ export function NotFoundRevealShell({
     <div className="relative min-h-screen bg-white font-[family-name:var(--font-inter)] text-neutral-900">
       <div className="mx-auto w-full max-w-[620px] px-6 pt-20 pb-44">
         <header>
-          <ProfileIdentity />
+          <ProfileIdentity header={profileHeader} />
           {!revealed && <NotionNotFoundIntro onReveal={handleReveal} />}
         </header>
 

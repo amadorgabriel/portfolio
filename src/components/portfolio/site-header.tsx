@@ -13,7 +13,7 @@ const tabs: { id: SectionId; label: string }[] = [
 export function ProfileIdentity({
   header,
 }: Readonly<{ header?: ProfileHeader }>) {
-  const name = header?.name ?? profile.name;
+  const name = header?.name ?? profile.displayName;
   const subtitle =
     header?.subtitle ?? `${profile.role} · ${profile.location}`;
 

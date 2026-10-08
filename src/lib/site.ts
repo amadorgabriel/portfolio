@@ -3,8 +3,11 @@ export const SITE_URL =
 
 export const SITE_NAME = "Gabriel Rodrigues Amador";
 
-export const SITE_TITLE =
-  "Gabriel Rodrigues Amador — Frontend & Fullstack Engineer";
+export const SITE_TAB_NAME = "Gabriel Rodrigues";
+
+export const SITE_ROLE = "Fullstack Engineer ReactJs .NET";
+
+export const SITE_TITLE = `${SITE_TAB_NAME} — ${SITE_ROLE}`;
 
 export const SITE_DESCRIPTION =
   "Frontend and fullstack engineer in São Paulo, Brazil. I build scalable web products with React, TypeScript, and Next.js. Portfolio, experience, and selected open-source work.";

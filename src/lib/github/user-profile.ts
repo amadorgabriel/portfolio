@@ -52,19 +52,19 @@ export async function fetchGitHubProfileHeader(): Promise<ProfileHeader> {
     );
     if (!response.ok) {
       return {
-        name: fallbackProfile.name,
+        name: fallbackProfile.displayName,
         subtitle: `${fallbackProfile.role} · ${fallbackProfile.location}`,
       };
     }
 
     const user = (await response.json()) as GitHubUser;
     return {
-      name: user.name?.trim() || user.login || fallbackProfile.name,
+      name: user.name?.trim() || user.login || fallbackProfile.displayName,
       subtitle: formatProfileSubtitle(user.bio, user.company, user.location),
     };
   } catch {
     return {
-      name: fallbackProfile.name,
+      name: fallbackProfile.displayName,
       subtitle: `${fallbackProfile.role} · ${fallbackProfile.location}`,
     };
   }

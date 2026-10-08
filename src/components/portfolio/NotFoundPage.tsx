@@ -1,11 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import type { ProfileHeader } from "@/lib/github/user-profile";
 import { NotFoundRevealShell, linkClass } from "./not-found-reveal-shell";
 
-export function NotFoundPage() {
+export function NotFoundPage({
+  profileHeader,
+}: Readonly<{ profileHeader: ProfileHeader }>) {
   return (
-    <NotFoundRevealShell>
+    <NotFoundRevealShell profileHeader={profileHeader}>
       <p className="text-[15px] leading-relaxed text-neutral-600">
         <span className="font-medium text-neutral-800">404</span>
         {" · "}
