@@ -24,7 +24,7 @@ export function PortfolioRevealShell({
   projectsSection: ReactNode;
 }>) {
   const { tab, setTab } = useSectionTab();
-  const { showIntro, handleReveal } = usePortfolioIntro();
+  const { showIntro, revealed, handleReveal } = usePortfolioIntro();
 
   return (
     <div className="relative min-h-screen bg-white font-[family-name:var(--font-inter)] text-neutral-900">
@@ -38,24 +38,28 @@ export function PortfolioRevealShell({
               </div>
             )}
           </div>
-          <div className="proto-heavy-up">
-            <SiteNav active={tab} onChange={setTab} />
-          </div>
+          {revealed ? (
+            <div className="proto-heavy-up">
+              <SiteNav active={tab} onChange={setTab} />
+            </div>
+          ) : null}
         </header>
 
-        <main key={tab} className="mt-12">
-          {tab === "work" ? (
-            <WorkTabContent
-              layout={workLayout}
-              favoritesMode={favoritesMode}
-              enterHeavy
-              aboutSection={aboutSection}
-              pinnedSection={pinnedSection}
-            />
-          ) : (
-            projectsSection
-          )}
-        </main>
+        {revealed ? (
+          <main key={tab} className="mt-12">
+            {tab === "work" ? (
+              <WorkTabContent
+                layout={workLayout}
+                favoritesMode={favoritesMode}
+                enterHeavy
+                aboutSection={aboutSection}
+                pinnedSection={pinnedSection}
+              />
+            ) : (
+              projectsSection
+            )}
+          </main>
+        ) : null}
       </div>
     </div>
   );

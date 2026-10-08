@@ -19,7 +19,8 @@ export function usePortfolioIntro() {
       return;
     }
 
-    if (sessionStorage.getItem(INTRO_SESSION_KEY) === "1") {
+    const played = sessionStorage.getItem(INTRO_SESSION_KEY) === "1";
+    if (played) {
       setRevealed(true);
       setShowIntro(false);
     } else {
