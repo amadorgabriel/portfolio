@@ -1,4 +1,4 @@
-# Gabriel Rodrigues Amador — extended context
+# Gabriel Rodrigues Amador · extended context
 
 ## Summary
 
@@ -7,15 +7,15 @@ Gabriel Rodrigues Amador is a frontend and fullstack engineer based in São Paul
 ## Work experience (high level)
 
 - Mid Frontend / Fullstack Engineer at Spott (2026)
-- Mid Frontend Engineer at Etiqueta (2023–2026)
-- Junior Frontend Engineer at SENAI (2021–2023)
+- Mid Frontend Engineer at Etiqueta (2023-2026)
+- Junior Frontend Engineer at SENAI (2021-2023)
 - Junior Frontend Engineer at Intelitrader (2021)
 
 ## Education
 
-- Bachelor's in Systems Analysis and Development — UNINOVE
-- Multimedia Technician — SENAI
-- Systems Development Technician — SENAI
+- Bachelor's in Systems Analysis and Development · UNINOVE
+- Multimedia Technician · SENAI
+- Systems Development Technician · SENAI
 
 ## Technical focus
 

@@ -29,12 +29,12 @@ export const work: WorkItem[] = [
   {
     title: "Mid Frontend Engineer to Etiqueta",
     href: "https://home.etiquetacerta.com/pt",
-    period: "2023 – 2026",
+    period: "2023 - 2026",
   },
   {
     title: "Junior Frontend Engineer to Senai",
     href: "https://www.sp.senai.br/",
-    period: "2021 – 2023",
+    period: "2021 - 2023",
   },
   {
     title: "Junior Frontend Engineer to Intelitrader",

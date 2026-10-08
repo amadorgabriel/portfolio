@@ -63,7 +63,7 @@ export const metadata: Metadata = {
         url: OG_IMAGE_PATH,
         width: OG_IMAGE_WIDTH,
         height: OG_IMAGE_HEIGHT,
-        alt: `${SITE_NAME} — Software Engineer`,
+        alt: `${SITE_NAME} · Software Engineer`,
       },
     ],
   },

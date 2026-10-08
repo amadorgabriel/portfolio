@@ -75,7 +75,7 @@ export function buildStructuredDataGraph() {
         "@type": "ProfilePage",
         "@id": profilePageId,
         url: SITE_URL,
-        name: `${SITE_NAME} — Portfolio`,
+        name: `${SITE_NAME} · Portfolio`,
         description: SITE_DESCRIPTION,
         isPartOf: { "@id": websiteId },
         mainEntity: { "@id": personId },

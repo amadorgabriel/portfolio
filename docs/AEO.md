@@ -1,4 +1,4 @@
-# AEO (Answer Engine Optimization) — this repository
+# AEO (Answer Engine Optimization) · this repository
 
 This portfolio is structured so search engines and AI crawlers can discover accurate facts about Gabriel Rodrigues Amador.
 
@@ -23,8 +23,8 @@ Optional: `GOOGLE_SITE_VERIFICATION` for Search Console.
 
 ## Validation
 
-- [Google Rich Results Test](https://search.google.com/test/rich-results) — homepage URL
-- [Schema Markup Validator](https://validator.schema.org/) — view page source, copy JSON-LD
+- [Google Rich Results Test](https://search.google.com/test/rich-results) · homepage URL
+- [Schema Markup Validator](https://validator.schema.org/) · view page source, copy JSON-LD
 - Share debugger: LinkedIn Post Inspector, X Card Validator
 
 ## Content notes
