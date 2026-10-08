@@ -4,9 +4,9 @@ import "./globals.css";
 import "@/styles/portfolio-motion.css";
 import { SiteJsonLd } from "@/components/site-json-ld";
 import {
-  OG_IMAGE_HEIGHT,
+  OG_IMAGE_ALT,
   OG_IMAGE_PATH,
-  OG_IMAGE_WIDTH,
+  OG_LOGO_PATH,
   SITE_DESCRIPTION,
   SITE_KEYWORDS,
   SITE_NAME,
@@ -14,6 +14,7 @@ import {
   SITE_TAB_NAME,
   SITE_TITLE,
   SITE_URL,
+  ogImage,
 } from "@/lib/site";
 
 const inter = Inter({
@@ -58,14 +59,7 @@ export const metadata: Metadata = {
     title: SITE_TITLE,
     description: SITE_OG_DESCRIPTION,
     siteName: SITE_NAME,
-    images: [
-      {
-        url: OG_IMAGE_PATH,
-        width: OG_IMAGE_WIDTH,
-        height: OG_IMAGE_HEIGHT,
-        alt: `${SITE_NAME} · Software Engineer`,
-      },
-    ],
+    images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
@@ -73,7 +67,12 @@ export const metadata: Metadata = {
     creator: "@_amadorgabriel_",
     title: SITE_TITLE,
     description: SITE_OG_DESCRIPTION,
-    images: [OG_IMAGE_PATH],
+    images: [
+      {
+        url: OG_IMAGE_PATH,
+        alt: OG_IMAGE_ALT,
+      },
+    ],
   },
   icons: {
     icon: "/favicon.ico",
@@ -97,6 +96,7 @@ export default function RootLayout({
     <html lang="en-US" className={inter.variable}>
       <head>
         <meta name="theme-color" content="#ffffff" />
+        <meta property="og:logo" content={`${SITE_URL}${OG_LOGO_PATH}`} />
         <link rel="author" href="/humans.txt" />
       </head>
       <body

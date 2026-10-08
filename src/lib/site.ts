@@ -32,3 +32,16 @@ export const SITE_KEYWORDS = [
 export const OG_IMAGE_PATH = "/og-image.png";
 export const OG_IMAGE_WIDTH = 1200;
 export const OG_IMAGE_HEIGHT = 630;
+export const OG_IMAGE_TYPE = "image/png";
+export const OG_IMAGE_ALT = `${SITE_NAME} · Software Engineer`;
+
+export const OG_LOGO_PATH = "/profile.png";
+
+export const ogImage = {
+  url: OG_IMAGE_PATH,
+  secureUrl: `${SITE_URL}${OG_IMAGE_PATH}`,
+  type: OG_IMAGE_TYPE,
+  width: OG_IMAGE_WIDTH,
+  height: OG_IMAGE_HEIGHT,
+  alt: OG_IMAGE_ALT,
+};

@@ -30,4 +30,4 @@ Optional: `GOOGLE_SITE_VERIFICATION` for Search Console.
 ## Content notes
 
 - Primary copy is **server-rendered** on `/` (GitHub About README, pinned repos, projects).
-- Open Graph and Twitter cards use `public/og-image.png` (1200×630). The circular avatar on the page stays `public/profile.png`.
+- Open Graph and Twitter cards use `public/og-image.png` (1200×630, `og:image:type` `image/png`). `og:logo` points at `public/profile.png`. LinkedIn, Facebook, Slack, WhatsApp, and X read these tags.
