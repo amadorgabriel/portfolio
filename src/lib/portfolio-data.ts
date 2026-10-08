@@ -22,22 +22,22 @@ export type WorkItem = {
 
 export const work: WorkItem[] = [
   {
-    title: "Mid Frontend / Fullstack Engineer to Spott",
+    title: "Mid Frontend / Fullstack Engineer at Spott",
     href: "https://www.spott.eco/",
     period: "2026",
   },
   {
-    title: "Mid Frontend Engineer to Etiqueta",
+    title: "Mid Frontend Engineer at Etiqueta",
     href: "https://home.etiquetacerta.com/pt",
     period: "2023 - 2026",
   },
   {
-    title: "Junior Frontend Engineer to Senai",
+    title: "Junior Frontend Engineer at Senai",
     href: "https://www.sp.senai.br/",
     period: "2021 - 2023",
   },
   {
-    title: "Junior Frontend Engineer to Intelitrader",
+    title: "Junior Frontend Engineer at Intelitrader",
     href: "https://www.intelitrader.com.br/",
     period: "2021",
   },

@@ -24,36 +24,38 @@ export function PortfolioRevealShell({
   projectsSection: ReactNode;
 }>) {
   const { tab, setTab } = useSectionTab();
-  const { revealed, showIntro, handleReveal, checked } = usePortfolioIntro();
+  const { showIntro, handleReveal } = usePortfolioIntro();
 
   return (
     <div className="relative min-h-screen bg-white font-[family-name:var(--font-inter)] text-neutral-900">
       <div className="mx-auto w-full max-w-[620px] px-6 pt-20 pb-44">
         <header>
-          <ProfileIdentity header={profileHeader} />
-          {showIntro && <NotionCommandIntro onReveal={handleReveal} />}
-          {checked && revealed && (
-            <div className="proto-heavy-up" style={{ animationDelay: "0ms" }}>
-              <SiteNav active={tab} onChange={setTab} />
-            </div>
-          )}
+          <div className="relative">
+            <ProfileIdentity header={profileHeader} />
+            {showIntro && (
+              <div className="absolute inset-x-0 top-full z-20 bg-white">
+                <NotionCommandIntro onReveal={handleReveal} />
+              </div>
+            )}
+          </div>
+          <div className="proto-heavy-up">
+            <SiteNav active={tab} onChange={setTab} />
+          </div>
         </header>
 
-        {checked && revealed && (
-          <main key={tab} className="proto-heavy-up mt-12" style={{ animationDelay: "90ms" }}>
-            {tab === "work" ? (
-              <WorkTabContent
-                layout={workLayout}
-                favoritesMode={favoritesMode}
-                enterHeavy
-                aboutSection={aboutSection}
-                pinnedSection={pinnedSection}
-              />
-            ) : (
-              projectsSection
-            )}
-          </main>
-        )}
+        <main key={tab} className="mt-12">
+          {tab === "work" ? (
+            <WorkTabContent
+              layout={workLayout}
+              favoritesMode={favoritesMode}
+              enterHeavy
+              aboutSection={aboutSection}
+              pinnedSection={pinnedSection}
+            />
+          ) : (
+            projectsSection
+          )}
+        </main>
       </div>
     </div>
   );

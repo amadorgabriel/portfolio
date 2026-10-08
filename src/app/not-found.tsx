@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { NotFoundPage } from "@/components/portfolio/NotFoundPage";
-import { fetchGitHubProfileHeader } from "@/lib/github/user-profile";
+import { staticProfileHeader } from "@/lib/github/user-profile";
 import { SITE_TAB_NAME, SITE_URL, ogImage } from "@/lib/site";
 
 const notFoundTitle = `Page not found · ${SITE_TAB_NAME}`;
@@ -25,7 +25,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function NotFound() {
-  const profileHeader = await fetchGitHubProfileHeader();
-  return <NotFoundPage profileHeader={profileHeader} />;
+export default function NotFound() {
+  return <NotFoundPage profileHeader={staticProfileHeader} />;
 }

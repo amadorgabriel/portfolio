@@ -25,9 +25,7 @@ export function NotFoundRevealShell({
           {!revealed && <NotionNotFoundIntro onReveal={handleReveal} />}
         </header>
 
-        {revealed && (
-          <main className="proto-heavy-up mt-12 space-y-4">{children}</main>
-        )}
+        <main className="proto-heavy-up mt-12 space-y-4">{children}</main>
       </div>
     </div>
   );

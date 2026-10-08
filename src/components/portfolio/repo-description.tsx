@@ -4,7 +4,7 @@ import { useCallback, useState, type MouseEvent } from "react";
 import { createPortal } from "react-dom";
 
 const descriptionClass =
-  "truncate text-[13px] font-light text-neutral-400/85";
+  "truncate text-[13px] font-light text-neutral-600";
 
 export function RepoDescription({
   text,

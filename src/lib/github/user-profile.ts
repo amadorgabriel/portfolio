@@ -45,6 +45,11 @@ export function formatProfileSubtitle(
   return `${fallbackProfile.role} · ${fallbackProfile.location}`;
 }
 
+export const staticProfileHeader: ProfileHeader = {
+  name: fallbackProfile.displayName,
+  subtitle: `${fallbackProfile.role} · ${fallbackProfile.location}`,
+};
+
 export async function fetchGitHubProfileHeader(): Promise<ProfileHeader> {
   try {
     const response = await githubFetch(

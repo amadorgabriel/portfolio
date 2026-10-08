@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { profile } from "@/lib/portfolio-data";
 import type { ProfileHeader } from "@/lib/github/user-profile";
 import type { SectionId } from "./use-section-tab";
@@ -25,11 +24,14 @@ export function ProfileIdentity({
         className="cursor-pointer rounded-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-400"
         aria-label="Refresh page"
       >
-        <Image
-          src="/profile.png"
+        {/* eslint-disable-next-line @next/next/no-img-element -- fixed 80px avatar; skip the image optimizer srcset */}
+        <img
+          src="/profile-avatar.png"
           width={40}
           height={40}
           alt={name}
+          fetchPriority="high"
+          decoding="async"
           className="h-10 w-10 rounded-full bg-neutral-100 object-cover"
         />
       </button>
@@ -64,7 +66,7 @@ export function SiteNav({
           className={`cursor-pointer underline-offset-4 transition-colors ${
             active === tab.id
               ? "font-medium text-neutral-900 underline decoration-neutral-300/60"
-              : "text-neutral-400 hover:text-neutral-700"
+              : "text-neutral-600 hover:text-neutral-900"
           }`}
         >
           {tab.label}
@@ -82,7 +84,7 @@ export function SiteHeader({
   onChange: (id: SectionId) => void;
 }>) {
   return (
-    <header className="proto-fade">
+    <header>
       <ProfileIdentity />
       <SiteNav active={active} onChange={onChange} />
     </header>

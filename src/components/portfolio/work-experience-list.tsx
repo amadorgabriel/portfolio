@@ -9,7 +9,7 @@ import { NotionSpinner } from "./notion-spinner";
 const linkGroupHoverClass =
   "underline-offset-[3px] decoration-neutral-300/55 group-hover:underline group-hover:decoration-neutral-400/65";
 const dateClass =
-  "shrink-0 text-[13px] font-light tabular-nums text-neutral-400/85";
+  "shrink-0 text-[13px] font-light tabular-nums text-neutral-600";
 
 type HoverState = {
   href: string;

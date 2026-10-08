@@ -8,7 +8,7 @@ const INTRO_SESSION_KEY = "portfolio-intro-played";
 export function usePortfolioIntro() {
   const reduced = usePrefersReducedMotion();
   const [revealed, setRevealed] = useState(reduced);
-  const [showIntro, setShowIntro] = useState(false);
+  const [showIntro, setShowIntro] = useState(!reduced);
   const [checked, setChecked] = useState(reduced);
 
   useEffect(() => {

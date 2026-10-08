@@ -2,7 +2,7 @@ import { fetchProfileReadmeMarkdown } from "@/lib/github/profile-readme";
 import { AboutMarkdown } from "./about-markdown";
 import { ReposSectionEmpty } from "./repos-section-ui";
 
-const sectionLabelClass = "text-[13px] font-normal text-neutral-400/70";
+const sectionLabelClass = "text-[13px] font-normal text-neutral-600";
 
 export async function AboutSection({
   sectionClass = "",

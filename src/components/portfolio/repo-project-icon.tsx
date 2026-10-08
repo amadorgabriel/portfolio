@@ -34,6 +34,10 @@ export function RepoProjectIcon({
       <img
         src={repo.iconUrl}
         alt=""
+        width={40}
+        height={40}
+        loading="lazy"
+        decoding="async"
         className="h-full w-full object-contain"
         onError={() => setUsePlaceholder(true)}
       />

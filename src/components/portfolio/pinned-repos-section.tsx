@@ -3,13 +3,13 @@ import { fetchPinnedRepositories } from "@/lib/github/repos";
 import { GitHubRepoListItem } from "./github-repo-list-item";
 import { ReposSectionEmpty } from "./repos-section-ui";
 
-const sectionLabelClass = "text-[13px] font-normal text-neutral-400/70";
+const sectionLabelClass = "text-[13px] font-normal text-neutral-600";
 
 function PinnedHeading() {
   return (
     <h2 className={`${sectionLabelClass} flex items-center gap-1.5`}>
       Pinned
-      <Pin size={13} strokeWidth={1.5} className="text-neutral-400/80" aria-hidden />
+      <Pin size={13} strokeWidth={1.5} className="text-neutral-600" aria-hidden />
     </h2>
   );
 }

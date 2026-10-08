@@ -18,6 +18,8 @@ import {
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "optional",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -89,6 +91,12 @@ export default function RootLayout({
     <html lang="en-US" className={inter.variable}>
       <head>
         <meta name="theme-color" content="#ffffff" />
+        <link
+          rel="preload"
+          as="image"
+          href="/profile-avatar.png"
+          fetchPriority="high"
+        />
         <meta property="og:logo" content={`${SITE_URL}${OG_LOGO_PATH}`} />
         <link rel="author" href="/humans.txt" />
       </head>

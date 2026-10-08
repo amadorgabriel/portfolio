@@ -2,9 +2,9 @@ import type { ReactNode } from "react";
 import { education, profile, work } from "@/lib/portfolio-data";
 import { WorkExperienceList } from "./work-experience-list";
 
-const sectionLabelClass = "text-[13px] font-normal text-neutral-400/70";
+const sectionLabelClass = "text-[13px] font-normal text-neutral-600";
 const metaTextClass =
-  "shrink-0 text-[13px] font-light tabular-nums text-neutral-400/85";
+  "shrink-0 text-[13px] font-light tabular-nums text-neutral-600";
 const linkHoverClass =
   "underline-offset-[3px] decoration-neutral-300/55 hover:underline hover:decoration-neutral-400/65";
 
@@ -16,7 +16,7 @@ function heavySectionProps(
   index: number,
   baseClass = "",
 ) {
-  if (!enterHeavy) return baseClass ? { className: baseClass } : {};
+  if (!enterHeavy || index === 0) return baseClass ? { className: baseClass } : {};
   return {
     className: `${baseClass} proto-heavy-section`.trim(),
     style: { animationDelay: `${120 + index * 85}ms` },

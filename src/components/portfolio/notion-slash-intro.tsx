@@ -69,11 +69,11 @@ export function NotionSlashIntro({
   if (reduced) return null;
 
   return (
-    <div className="relative mt-8 min-h-[min(28vh,220px)]">
+    <div className="relative mt-8">
       <div className="relative max-w-[360px]">
         <div className="min-h-[44px] rounded-md px-1 py-2">
           {typed.length === 0 && phase === "block" && (
-            <p className="text-[15px] text-neutral-400">
+            <p className="text-[15px] text-neutral-600">
               Type &apos;/&apos; for commands…
             </p>
           )}
@@ -102,12 +102,12 @@ export function NotionSlashIntro({
                       : "text-neutral-500"
                   }`}
                 >
-                  <Icon size={16} className="shrink-0 text-neutral-400" />
+                  <Icon size={16} className="shrink-0 text-neutral-600" />
                   <span className={isPrimary ? "font-medium" : ""}>
                     {item.label}
                   </span>
                   {item.hint ? (
-                    <span className="ml-auto text-[12px] text-neutral-400">
+                    <span className="ml-auto text-[12px] text-neutral-600">
                       {item.hint}
                     </span>
                   ) : null}
