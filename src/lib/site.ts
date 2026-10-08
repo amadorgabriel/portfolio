@@ -37,9 +37,12 @@ export const OG_IMAGE_ALT = `${SITE_NAME} · Software Engineer`;
 
 export const OG_LOGO_PATH = "/profile.png";
 
+/** Absolute HTTPS image. WhatsApp and X ignore relative og:image / twitter:image. */
+export const OG_IMAGE_URL = `${SITE_URL}${OG_IMAGE_PATH}`;
+
 export const ogImage = {
-  url: OG_IMAGE_PATH,
-  secureUrl: `${SITE_URL}${OG_IMAGE_PATH}`,
+  url: OG_IMAGE_URL,
+  secureUrl: OG_IMAGE_URL,
   type: OG_IMAGE_TYPE,
   width: OG_IMAGE_WIDTH,
   height: OG_IMAGE_HEIGHT,

@@ -4,8 +4,6 @@ import "./globals.css";
 import "@/styles/portfolio-motion.css";
 import { SiteJsonLd } from "@/components/site-json-ld";
 import {
-  OG_IMAGE_ALT,
-  OG_IMAGE_PATH,
   OG_LOGO_PATH,
   SITE_DESCRIPTION,
   SITE_KEYWORDS,
@@ -55,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "/",
+    url: SITE_URL,
     title: SITE_TITLE,
     description: SITE_OG_DESCRIPTION,
     siteName: SITE_NAME,
@@ -67,12 +65,7 @@ export const metadata: Metadata = {
     creator: "@_amadorgabriel_",
     title: SITE_TITLE,
     description: SITE_OG_DESCRIPTION,
-    images: [
-      {
-        url: OG_IMAGE_PATH,
-        alt: OG_IMAGE_ALT,
-      },
-    ],
+    images: [ogImage],
   },
   icons: {
     icon: "/favicon.ico",

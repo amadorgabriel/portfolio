@@ -7,6 +7,10 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       { userAgent: "*", ...allowPublic },
+      { userAgent: "Twitterbot", ...allowPublic },
+      { userAgent: "facebookexternalhit", ...allowPublic },
+      { userAgent: "Facebot", ...allowPublic },
+      { userAgent: "WhatsApp", ...allowPublic },
       { userAgent: "GPTBot", ...allowPublic },
       { userAgent: "ChatGPT-User", ...allowPublic },
       { userAgent: "Google-Extended", ...allowPublic },
