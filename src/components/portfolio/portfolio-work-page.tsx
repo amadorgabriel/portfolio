@@ -16,7 +16,7 @@ function heavySectionProps(
   index: number,
   baseClass = "",
 ) {
-  if (!enterHeavy || index === 0) return baseClass ? { className: baseClass } : {};
+  if (!enterHeavy) return baseClass ? { className: baseClass } : {};
   return {
     className: `${baseClass} proto-heavy-section`.trim(),
     style: { animationDelay: `${120 + index * 85}ms` },

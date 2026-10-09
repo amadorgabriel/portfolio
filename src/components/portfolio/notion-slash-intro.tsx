@@ -70,44 +70,55 @@ export function NotionSlashIntro({
 
   return (
     <div className="relative mt-8">
-      <div className="relative max-w-[360px]">
-        <div className="min-h-[44px] rounded-md px-1 py-2">
-          {typed.length === 0 && phase === "block" && (
-            <p className="text-[15px] text-neutral-600">
+      <div className="relative max-w-[280px]">
+        <div className="min-h-[36px] px-0.5 py-1.5">
+          {typed.length === 0 && phase === "block" ? (
+            <p className="text-[14px] text-neutral-500">
               Type &apos;/&apos; for commands…
             </p>
-          )}
-          {(typed.length > 0 || phase !== "block") && (
-            <p className="text-[15px] text-neutral-800">
+          ) : (
+            <p className="text-[14px] text-neutral-800">
               {typed}
-              {!complete && phase === "typing" && (
-                <span className="proto-cursor ml-0.5 inline-block h-[1em] w-[2px] translate-y-[2px] bg-neutral-800" />
-              )}
+              {!complete && phase === "typing" ? (
+                <span className="proto-cursor ml-0.5 inline-block h-[1em] w-px translate-y-[1px] bg-neutral-800" />
+              ) : null}
             </p>
           )}
         </div>
 
-        {showMenu && (
-          <ul className="mt-1 overflow-hidden rounded-lg border border-neutral-200 bg-white py-1 shadow-lg">
+        {showMenu ? (
+          <ul
+            className="mt-0.5 overflow-hidden rounded-md border border-neutral-200/90 bg-white py-0.5 shadow-[0_4px_12px_rgba(0,0,0,0.08),0_0_0_1px_rgba(0,0,0,0.04)]"
+            style={{ transformOrigin: "top left" }}
+          >
             {visibleItems.map((item) => {
               const Icon = item.icon;
               const isPrimary = item.match === selectedMatch;
               const active = selected && isPrimary;
+              const isDecoy = !isPrimary;
               return (
                 <li
                   key={item.match}
-                  className={`flex items-center gap-3 px-3 py-2 text-[14px] transition-colors ${
+                  className={`flex items-center gap-2 px-2 ${
+                    isDecoy ? "h-6 text-[12px]" : "h-7 text-[13px]"
+                  } transition-colors duration-150 ease-out ${
                     active
                       ? "bg-neutral-100 text-neutral-900"
-                      : "text-neutral-500"
+                      : isDecoy
+                        ? "text-neutral-400"
+                        : "text-neutral-600"
                   }`}
                 >
-                  <Icon size={16} className="shrink-0 text-neutral-600" />
-                  <span className={isPrimary ? "font-medium" : ""}>
+                  {isDecoy ? (
+                    <span className="w-[14px] shrink-0" aria-hidden />
+                  ) : (
+                    <Icon size={14} className="shrink-0 text-neutral-500" />
+                  )}
+                  <span className={isPrimary && !active ? "font-medium" : ""}>
                     {item.label}
                   </span>
-                  {item.hint ? (
-                    <span className="ml-auto text-[12px] text-neutral-600">
+                  {item.hint && isPrimary ? (
+                    <span className="ml-auto text-[11px] text-neutral-400">
                       {item.hint}
                     </span>
                   ) : null}
@@ -115,7 +126,7 @@ export function NotionSlashIntro({
               );
             })}
           </ul>
-        )}
+        ) : null}
       </div>
     </div>
   );
