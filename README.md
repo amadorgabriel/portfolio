@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### GitHub API (recommended)
 
-Pinned repos and the Projects tab call the GitHub API. Set a token to avoid low unauthenticated rate limits:
+The Projects tab calls the GitHub API. Pinned repositories use GraphQL when `GITHUB_TOKEN` is set, and the public GitHub profile otherwise. Set a token to avoid low unauthenticated rate limits:
 
 1. Copy `.env.example` to `.env.local`
 2. Create a token at [github.com/settings/tokens](https://github.com/settings/tokens) (public repo read access is enough)

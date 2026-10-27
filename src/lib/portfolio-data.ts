@@ -22,6 +22,11 @@ export type WorkItem = {
 
 export const work: WorkItem[] = [
   {
+    title: "Software Engineer at Codurance",
+    href: "https://www.codurance.com/",
+    period: "2026 - Present",
+  },
+  {
     title: "Mid Frontend / Fullstack Engineer at Spott",
     href: "https://www.spott.eco/",
     period: "2026",
@@ -32,7 +37,7 @@ export const work: WorkItem[] = [
     period: "2023 - 2026",
   },
   {
-    title: "Junior Frontend Engineer at Senai",
+    title: "Junior Frontend Engineer at SENAI",
     href: "https://www.sp.senai.br/",
     period: "2021 - 2023",
   },
