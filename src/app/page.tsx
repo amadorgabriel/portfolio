@@ -4,18 +4,20 @@ import { PinnedReposSection } from "@/components/portfolio/pinned-repos-section"
 import { PortfolioRevealShell } from "@/components/portfolio/portfolio-reveal-shell";
 import { PortfolioReposSection } from "@/components/portfolio/portfolio-repos-section";
 import { ReposSectionLoading } from "@/components/portfolio/repos-section-ui";
-import { staticProfileHeader } from "@/lib/github/user-profile";
+import { fetchGitHubProfileHeader } from "@/lib/github/user-profile";
 import { SITE_DESCRIPTION } from "@/lib/site";
 
 const sectionClass =
   "border-t border-neutral-200 pt-10 first:border-0 first:pt-0";
 
-export default function Home() {
+export default async function Home() {
+  const profileHeader = await fetchGitHubProfileHeader();
+
   return (
     <>
       <p className="sr-only">{SITE_DESCRIPTION}</p>
       <PortfolioRevealShell
-        profileHeader={staticProfileHeader}
+        profileHeader={profileHeader}
         favoritesMode="star-label"
         workLayout="lines"
         aboutSection={

@@ -6,6 +6,7 @@ Gabriel Rodrigues Amador is a frontend and fullstack engineer based in São Paul
 
 ## Work experience (high level)
 
+- Software Engineer at Codurance (2026 - Present)
 - Mid Frontend / Fullstack Engineer at Spott (2026)
 - Mid Frontend Engineer at Etiqueta (2023-2026)
 - Junior Frontend Engineer at SENAI (2021-2023)

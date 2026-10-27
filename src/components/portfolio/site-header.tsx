@@ -1,7 +1,8 @@
 "use client";
 
+import { Fragment, type ReactNode } from "react";
 import { profile } from "@/lib/portfolio-data";
-import type { ProfileHeader } from "@/lib/github/user-profile";
+import type { ProfileCompany, ProfileHeader } from "@/lib/github/user-profile";
 import type { SectionId } from "./use-section-tab";
 
 const tabs: { id: SectionId; label: string }[] = [
@@ -9,12 +10,44 @@ const tabs: { id: SectionId; label: string }[] = [
   { id: "projects", label: "Projects" },
 ];
 
+const companyLinkClass =
+  "decoration-neutral-300/55 underline-offset-[3px] transition-colors hover:text-neutral-800 hover:underline hover:decoration-neutral-400/65";
+
+function headlineParts(
+  bio: string | null,
+  location: string | null,
+  company: ProfileCompany | null,
+): { key: string; node: ReactNode }[] {
+  const parts: { key: string; node: ReactNode }[] = [];
+
+  if (bio) parts.push({ key: "bio", node: bio });
+  if (location) parts.push({ key: "location", node: location });
+  if (company) {
+    parts.push({
+      key: "company",
+      node: (
+        <a
+          href={company.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={companyLinkClass}
+        >
+          {company.handle}
+        </a>
+      ),
+    });
+  }
+
+  return parts;
+}
+
 export function ProfileIdentity({
   header,
 }: Readonly<{ header?: ProfileHeader }>) {
   const name = header?.name ?? profile.displayName;
-  const subtitle =
-    header?.subtitle ?? `${profile.role} · ${profile.location}`;
+  const parts = header
+    ? headlineParts(header.bio, header.location, header.company)
+    : headlineParts(profile.role, profile.location, null);
 
   return (
     <div className="flex items-center gap-3.5">
@@ -37,7 +70,16 @@ export function ProfileIdentity({
       </button>
       <div>
         <h1 className="text-[16px] font-semibold tracking-[-0.01em]">{name}</h1>
-        <p className="text-[14px] text-neutral-500">{subtitle}</p>
+        {parts.length > 0 ? (
+          <p className="text-[14px] text-neutral-500">
+            {parts.map((part, index) => (
+              <Fragment key={part.key}>
+                {index > 0 ? " · " : null}
+                {part.node}
+              </Fragment>
+            ))}
+          </p>
+        ) : null}
       </div>
     </div>
   );

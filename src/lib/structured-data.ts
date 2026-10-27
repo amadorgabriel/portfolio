@@ -11,6 +11,12 @@ const personId = `${SITE_URL}/#person`;
 const websiteId = `${SITE_URL}/#website`;
 const profilePageId = `${SITE_URL}/#profilepage`;
 
+function employerName(title: string): string {
+  const marker = " at ";
+  const index = title.lastIndexOf(marker);
+  return index === -1 ? title : title.slice(index + marker.length).trim();
+}
+
 export function buildStructuredDataGraph() {
   const sameAs = [
     "https://github.com/amadorgabriel",
@@ -53,7 +59,7 @@ export function buildStructuredDataGraph() {
   if (work[0]) {
     person.worksFor = {
       "@type": "Organization",
-      name: "Spott",
+      name: employerName(work[0].title),
       url: work[0].href,
     };
   }
