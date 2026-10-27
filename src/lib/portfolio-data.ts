@@ -37,7 +37,7 @@ export const work: WorkItem[] = [
     period: "2023 - 2026",
   },
   {
-    title: "Junior Frontend Engineer at Senai",
+    title: "Junior Frontend Engineer at SENAI",
     href: "https://www.sp.senai.br/",
     period: "2021 - 2023",
   },
